@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class ServerClient {
@@ -12,8 +14,10 @@ public class ServerClient {
     private static Set<PrintWriter> clientWriters = new HashSet<>();
     private static int guestCounter = 1;
 
+    private List<ClientHandler> ClientList = new ArrayList<>();
+
     private static String getGuestName() {
-        return "Gość " + integerToRoman(guestCounter++);
+        return "Charon " + integerToRoman(guestCounter++);
     }
 
     private static String integerToRoman(int num) {

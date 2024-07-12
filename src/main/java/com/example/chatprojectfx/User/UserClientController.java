@@ -1,4 +1,4 @@
-package com.example.chatprojectfx;
+package com.example.chatprojectfx.User;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

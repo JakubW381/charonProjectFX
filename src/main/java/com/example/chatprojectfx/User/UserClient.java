@@ -1,4 +1,4 @@
-package com.example.chatprojectfx;
+package com.example.chatprojectfx.User;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -22,7 +22,6 @@ public class UserClient extends Application {
     private TextArea messageTextArea;
     private PrintWriter out;
     private BufferedReader in;
-
 
     @Override
     public void start(Stage stage) throws IOException {
